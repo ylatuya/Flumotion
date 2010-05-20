@@ -19,6 +19,7 @@
         <accept-format media-type="theora" />
         <accept-format media-type="speex" />
         <accept-format media-type="vorbis" />
+        <accept-format media-type="vp8" />
         <provide-format media-type="ogg" />
       </wizard>
     </component>
