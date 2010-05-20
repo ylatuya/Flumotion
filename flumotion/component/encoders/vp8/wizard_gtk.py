@@ -95,7 +95,6 @@ class VP8Step(VideoEncoderStep):
         self.add_proxy(self.model,
                        ['has_quality', 'has_bitrate'])
         self.add_proxy(self.model.properties,
-                       B
                        ['bitrate', 'quality', 'keyframe_delta'])
 
         # we specify keyframe_delta in seconds, but vp8 expects
