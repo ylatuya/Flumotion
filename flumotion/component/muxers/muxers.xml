@@ -63,7 +63,12 @@
         <entry type="component" location="webm.py"
                function="WebM"/>
       </entries>
-
+      <wizard _description="WebM" type="muxer"
+              feeder="default" eater="default">
+        <accept-format media-type="vorbis"/>
+        <accept-format media-type="vp8"/>
+        <provide-format media-type="webm" />
+      </wizard>
     </component>
 
   </components>

@@ -19,7 +19,7 @@
 
 # Headers in this file shall remain intact.
 
-"""Wizard plugin for the ogg and multipart muxers
+"""Wizard plugin for the ogg, multipart and webm muxers
 """
 
 from flumotion.component.muxers import base
@@ -33,3 +33,6 @@ class OggWizardPlugin(base.MuxerPlugin):
 
 class MultipartWizardPlugin(base.MuxerPlugin):
     requirements = ['multipartmux']
+
+class WebMWizardPlugin(base.MuxerPlugin):
+    requirements = ['matroskamux']
