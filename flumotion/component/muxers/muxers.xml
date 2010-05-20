@@ -43,6 +43,29 @@
       </wizard>
     </component>
 
+    <component type="mkv-muxer" base="flumotion/component/muxers"
+               _description="Muxes encoded feeds into an Mkv feed.">
+      <source location="flumotion.component.muxers.mkv"/>
+      <feeder name="default"/>
+      <eater name="default" multiple="yes"/>
+      <entries>
+        <entry type="component" location="mkv.py"
+               function="Mkv"/>
+      </entries>
+
+    </component>
+    <component type="webm-muxer" base="flumotion/component/muxers"
+               _description="Muxes encoded feeds into an WebM feed.">
+      <source location="flumotion.component.muxers.webm"/>
+      <feeder name="default"/>
+      <eater name="default" multiple="yes"/>
+      <entries>
+        <entry type="component" location="mkv.py"
+               function="WebM"/>
+      </entries>
+
+    </component>
+
   </components>
 
   <bundles>
@@ -64,6 +87,7 @@
             <directory name="flumotion/component/muxers">
                 <filename location="multipart.py" />
                 <filename location="ogg.py" />
+                <filename location="mkv.py" />
                 <filename location="checks.py" />
                 <filename location="wizard_gtk.py" />
             </directory>
