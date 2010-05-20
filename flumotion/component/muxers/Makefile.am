@@ -4,6 +4,8 @@ component_PYTHON = \
 	__init__.py \
 	base.py \
 	checks.py \
+	mkv.py \
+	webm.py \
 	multipart.py \
 	ogg.py \
 	wizard_gtk.py
