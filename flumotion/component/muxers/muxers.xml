@@ -60,7 +60,7 @@
       <feeder name="default"/>
       <eater name="default" multiple="yes"/>
       <entries>
-        <entry type="component" location="mkv.py"
+        <entry type="component" location="webm.py"
                function="WebM"/>
       </entries>
 
